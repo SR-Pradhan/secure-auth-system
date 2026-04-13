@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Secure Auth System</title>
+
+    <!--suppress HtmlUnknownTarget -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--suppress HtmlUnknownTarget -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+    <!--suppress HtmlUnknownTarget -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at top, #334155, #0f172a);
+            height: 100vh;
+            color: #e2e8f0;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #cbd5f5;
+        }
+
+        .btn-primary-custom {
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            border: none;
+            border-radius: 30px;
+            padding: 12px 30px;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary-custom {
+            background: rgba(255,255,255,0.1);
+            border: none;
+            border-radius: 30px;
+            padding: 12px 30px;
+            color: #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary-custom:hover,
+        .btn-secondary-custom:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #a5b4fc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container text-center d-flex flex-column justify-content-center align-items-center" style="height:100vh;">
+    <h1 class="title">
+        <i class="fas fa-shield-alt icon"></i> Secure Auth System
+    </h1>
+
+    <p class="subtitle mt-3">
+        A modern authentication system using Spring Boot & Security
+    </p>
+
+    <div class="mt-5 d-flex gap-3">
+        <a href="/login" class="btn btn-primary-custom">Login</a>
+        <a href="/registration" class="btn btn-secondary-custom">Register</a>
+    </div>
+
+</div>
+
+</body>
+</html>
